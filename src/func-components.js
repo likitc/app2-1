@@ -19,7 +19,7 @@ export function Navbar(){
 export function Header(){
     return (
         <div style={{textAlign: 'center', color: 'navy'}}>
-            <img src="./images/ban1.jpg" width="100%"/>
+            
             <h2>Hello Component</h2>
             <br/><br/><br/>
         </div>

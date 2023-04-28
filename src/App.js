@@ -5,13 +5,15 @@ import MsgBox from './func-props'
 
 function App() {
  
- return (
+ return ([<Navbar />,<p><Calendar /></p>,<Header />,<Footer />]
+
+  /*
   <>
     <Navbar />
-    <Header />
     <p><Calendar /></p>
+    <Header />
     <Footer />
-  </>
+  </>*/
 
  ) 
 

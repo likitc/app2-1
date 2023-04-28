@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 
-//มีคลาสเดียว จึงสามารถส่งออกแบบ default ได้
 export default class Calendar extends Component {
     getDate=() => {
         const dayNames = ['อาทิตย์', 'จันทร์', 'อังคาร', 'พุธ', 'พฤหัสบดี', 'ศุกร์', 'เสาร์']
@@ -13,12 +12,14 @@ export default class Calendar extends Component {
         const day = date.getDate()
         const month = monthNames[date.getMonth()]
         const year = date.getFullYear() + 543
-        return <div>วัน{weekDay} ที่ {day} {month} {year}</div>
+        const dayThai = `วัน${weekDay} ที่ ${day} ${month} ${year}`
+        return dayThai
+        //<div>วัน{weekDay} ที่ {day} {month} {year}</div>
         //`วัน${weekDay} ที่ ${day} ${month} ${year}` 
     }
 
     render() {
-        return <div>{this.getDate()}</div>
+        return <div style={{textAlign:'center'}}>{this.getDate()}</div>
     }
 
    
